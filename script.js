@@ -10,18 +10,21 @@ function choseAFaire(){
     monText.style.cssText ='margin: 0 10px; font-weight:bold; height:45px; width:50%; font-size:20px;';
     monText.innerText= inputTextContent;
 
-   
+    var monTick = document.createElement('p');
+    monTick.style.cssText = 'font-family: arial;-ms-transform: scaleX(-1) rotate(-35deg); -webkit-transform: scaleX(-1) rotate(-35deg);transform: scaleX(-1) rotate(-35deg);font-size:30px; color:green; font-weight:bold;';
+    monTick.innerText="L";
+    monTick.style.visibility ="hidden";
+    
     
 
     var monButtonDone = document.createElement('BUTTON');
     monButtonDone.innerText="Done";
     monButtonDone.style.cssText ='margin: 0 10px; font-weight:bold; height:35px; width:100px; font-size:20px;';
     monButtonDone.onclick = function changeLocation(){
-        var monTick = document.createElement('p');
-        monTick.style.cssText = 'font-family: arial;-ms-transform: scaleX(-1) rotate(-35deg); -webkit-transform: scaleX(-1) rotate(-35deg);transform: scaleX(-1) rotate(-35deg);font-size:30px;';
-        monTick.innerText="L";
-        maDiv.appendChild(monTick);
-        maDiv.style.backgroundColor = "green";
+        monTick.style.visibility ="visible";
+        
+        
+        //maDiv.style.backgroundColor = "green";
         return false;
         }
 
@@ -34,11 +37,12 @@ function choseAFaire(){
         }
 
         
-
+        
 	document.getElementById('toDoAFaire').appendChild(maDiv);
     maDiv.appendChild(monText);
     maDiv.appendChild(monButtonDone);
     maDiv.appendChild(monButtonRemove);
+    maDiv.appendChild(monTick);
     
     
 }
