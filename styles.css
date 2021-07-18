@@ -18,7 +18,6 @@ header {
   align-items: center;
   width: 100%;
   height: 500px;
-  background-color: purple;
   margin-top: 60px;
 }
 
@@ -26,9 +25,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 80%;
-  background-color: blue;
 }
 
 .toDoUser input {

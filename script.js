@@ -4,7 +4,7 @@ function choseAFaire(){
     let inputTextContent = document.getElementById("btn-text").value;
 
     var maDiv = document.createElement('div');
-    maDiv.style.cssText ='display: flex; flex-direction:row;background-color: yellow;width:800px; height:80px; justify-content:center; align-items:center; margin: 20px 0; font-size:20px;';
+    maDiv.style.cssText ='display: flex; flex-direction:row;width:800px; height:80px; justify-content:center; align-items:center; margin: 20px 0; font-size:20px; border-bottom:1px solid black;';
     
     var monText = document.createElement('p');
     monText.style.cssText ='margin: 0 10px; font-weight:bold; height:45px; width:50%; font-size:20px;';
