@@ -23,14 +23,14 @@ header {
   margin-top: 60px;
 }
 
-.btn-text {
+#btn-text {
   width: 200px;
   height: 30px;
   font-size: 25px;
   font-weight: bold;
 }
 
-.btn-click {
+#btn-click {
   width: 100px;
   height: 34px;
   font-size: 20px;

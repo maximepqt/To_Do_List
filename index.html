@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="script.js" ></script>
     <title>Your To Do List</title>
 </head>
 <body>
@@ -19,9 +19,9 @@
 <form action="POST">
     <div class="gestionToDo">
         <div class="toDoUser">
-            <input type="text" class="btn-text" name="btn-ToDo" placeholder="Qu'avez vous à faire ?">
-            <input type="button" class="btn-click" value="Envoyer">
-            <input type="button" class="btn-click" value="Clean">       
+            <input type="text"  name="btn-ToDo" placeholder="Qu'avez vous à faire ?" id="btn-text">
+            <input type="button" id="btn-click" value="Envoyer" onclick="choseAFaire();">
+            <input type="button" id="btn-click" value="Clean" onclick="cleanText();">       
         </div>
         <div class="toDoAFaire">
 
@@ -29,5 +29,7 @@
 
     </div>
 </form>
+<script src="script.js" ></script>
 </body>
+
 </html>
